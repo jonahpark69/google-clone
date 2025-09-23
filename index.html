@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accueil — Clone google</title>
+  <link rel="preload" as="image" href="assets/media/Google_2015_logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Barre du haut -->
+  <header class="topbar">
+    <nav class="topbar__nav">
+      <div class="topbar__right">
+        <a href="#" class="link">Gmail</a>
+        <a href="#" class="link">Images</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenu central -->
+  <main class="center">
+
+    <!-- Logo google -->
+    <img
+      class="logo-img"
+      src="assets/media/Google_2015_logo.svg"
+      alt="Google"
+      width="272"
+      height="92"
+      decoding="async"
+    />
+
+    <!-- Barre de recherche -->
+    <form class="search" role="search" action="#" method="get">
+      <!-- Loupe -->
+      <label for="search-input" class="search__icon" role="button" aria-label="Placer le focus dans la recherche" tabindex="0">
+        <img class="icon" src="assets/media/recherche.svg" alt="" aria-hidden="true" width="20" height="20">
+      </label>
+
+      <input id="search-input" name="q" type="text" placeholder="Rechercher" aria-label="Rechercher" autocomplete="off" />
+
+      <div class="search__actions">
+        <!-- Micro -->
+        <button type="button" class="icon-btn" aria-label="Recherche vocale">
+          <img class="icon" src="assets/media/micro.svg" alt="" aria-hidden="true" width="20" height="20">
+        </button>
+        <!-- Caméra -->
+        <button type="button" class="icon-btn" aria-label="Recherche par image">
+          <img class="icon" src="assets/media/camera.svg" alt="" aria-hidden="true" width="20" height="20">
+        </button>
+      </div>
+    </form>
+
+    <!-- Boutons -->
+    <div class="cta">
+      <button class="btn" type="submit">Recherche Google</button>
+      <button class="btn" type="button">J’ai de la chance</button>
+    </div>
+  </main>
+</body>
+</html>
+
+
+
